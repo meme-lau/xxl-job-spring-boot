@@ -8,11 +8,16 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * XxlJobAutoConfiguration
+ *
+ * @author meme
+ * @since 2019-03-04 18:05
+ */
 @Configuration
 @ConditionalOnClass(XxlJobExecutor.class)
 @EnableConfigurationProperties(XxlJobProperties.class)
 public class XxlJobAutoConfiguration {
-
 
     @ConditionalOnMissingBean
     @Bean(initMethod = "start", destroyMethod = "destroy")
