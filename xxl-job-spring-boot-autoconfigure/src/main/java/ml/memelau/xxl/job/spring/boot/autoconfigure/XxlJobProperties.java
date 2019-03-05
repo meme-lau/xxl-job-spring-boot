@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * XxlJobProperties
@@ -16,7 +16,7 @@ import java.util.Set;
 @Getter
 @Setter
 @ConfigurationProperties(prefix = XxlJobProperties.XXL_JOB_PREFIX)
-public class XxlJobProperties {
+class XxlJobProperties {
 
     public static final String XXL_JOB_PREFIX = "xxl.job";
 
@@ -36,7 +36,7 @@ public class XxlJobProperties {
         /**
          * 执行器注册中心地址[选填]，为空则关闭自动注册
          */
-        private Set<String> addresses = new HashSet<>();
+        private List<String> addresses = new ArrayList<>();
 
     }
 
@@ -69,9 +69,6 @@ public class XxlJobProperties {
          */
         private int logRetentionDays;
     }
-
-
-
 
 
 }
