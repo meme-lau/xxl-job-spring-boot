@@ -1,9 +1,10 @@
-package ml.memelau.xxl.job;
+package ml.memelau.xxl.job.spring.boot.autoconfigure;
 
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -35,7 +36,7 @@ public class XxlJobProperties {
         /**
          * 执行器注册中心地址[选填]，为空则关闭自动注册
          */
-        private Set<String> addresses;
+        private Set<String> addresses = new HashSet<>();
 
     }
 

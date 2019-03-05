@@ -1,4 +1,4 @@
-package ml.memelau.xxl.job;
+package ml.memelau.xxl.job.spring.boot.autoconfigure;
 
 import com.xxl.job.core.executor.XxlJobExecutor;
 import com.xxl.job.core.executor.impl.XxlJobSpringExecutor;
