@@ -42,6 +42,11 @@
 				<artifactId>xxl-job-core</artifactId>
 				<version>${xxl-job-core.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>ml.memelau.xxl.job</groupId>
+				<artifactId>xxl-job-spring-boot-autoconfigure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 

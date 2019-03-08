@@ -15,7 +15,6 @@
         <dependency>
             <groupId>ml.memelau.xxl.job</groupId>
             <artifactId>xxl-job-spring-boot-autoconfigure</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
