@@ -20,6 +20,8 @@ class XxlJobProperties {
 
     public static final String XXL_JOB_PREFIX = "xxl.job";
 
+    private Boolean enable = true;
+
     /**
      * 访问令牌[选填]，非空则进行匹配校验
      */
