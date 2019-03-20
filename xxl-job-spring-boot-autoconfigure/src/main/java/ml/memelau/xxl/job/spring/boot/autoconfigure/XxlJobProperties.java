@@ -15,12 +15,12 @@ import java.util.List;
  */
 @Getter
 @Setter
-@ConfigurationProperties(prefix = XxlJobProperties.XXL_JOB_PREFIX)
+@ConfigurationProperties(prefix = XxlJobProperties.PREFIX)
 class XxlJobProperties {
 
-    public static final String XXL_JOB_PREFIX = "xxl.job";
+    public static final String PREFIX = "xxl.job";
 
-    private Boolean enable = true;
+    private Boolean enabled = true;
 
     /**
      * 访问令牌[选填]，非空则进行匹配校验
